@@ -21,8 +21,7 @@ COPY . /app
 WORKDIR /app
 
 RUN apk update && \
-    apk add -y \
-        build-essential \
+    apk add build-essential \
         make \
         gcc 
 

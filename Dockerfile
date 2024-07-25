@@ -20,8 +20,8 @@ COPY . /app
 # 设定当前的工作目录
 WORKDIR /app
 
-RUN pkg update && \
-    pkg install -y \
+RUN apk update && \
+    apk add -y \
         build-essential \
         make \
         gcc 

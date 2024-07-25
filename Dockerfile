@@ -20,9 +20,8 @@ COPY . /app
 # 设定当前的工作目录
 WORKDIR /app
 
-RUN apk update && apk --no-cache --virtual build-dependencies add gcc build-base bash \
+RUN apk update && apk --no-cache add gcc build-base bash \
     python \
-    pkgconfig \
     git \
     gcc \
     openldap \

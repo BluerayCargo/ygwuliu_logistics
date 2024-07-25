@@ -21,9 +21,7 @@ COPY . /app
 WORKDIR /app
 
 RUN apk update && \
-    apk add build-essential \
-        make \
-        gcc 
+    apk add gcc 
 
 # 安装依赖到指定的/install文件夹
 # 选用国内镜像源以提高下载速度

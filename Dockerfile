@@ -20,8 +20,8 @@ COPY . /app
 # 设定当前的工作目录
 WORKDIR /app
 
-RUN apt-get update && \
-    apt-get install -y \
+RUN pkg update && \
+    pkg install -y \
         build-essential \
         make \
         gcc 

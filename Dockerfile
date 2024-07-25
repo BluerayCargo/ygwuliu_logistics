@@ -20,9 +20,7 @@ COPY . /app
 # 设定当前的工作目录
 WORKDIR /app
 
-RUN apk update && \
-    apk add gcc \
-    apk add build-base
+RUN apk update && apk --no-cache --virtual build-dependencies add gcc build-base
 
 # 安装依赖到指定的/install文件夹
 # 选用国内镜像源以提高下载速度
